@@ -4,7 +4,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-4 mt-8 border-t border-stone-200">
+    <footer className="py-4 mt-8 border-t border-stone-200 relative z-30">
       <div className="px-6">
         <div className="flex flex-col lg:flex-row items-center justify-between space-y-4 lg:space-y-0">
           <div className="text-center lg:text-left">
@@ -19,8 +19,8 @@ export function Footer() {
                 rel="noopener noreferrer"
               >
                 Creative Tim
-              </a>{" "}• 
-              Distributed by{" "}
+              </a>{" "}
+              • Distributed by{" "}
               <a
                 href="https://themewagon.com"
                 className="font-semibold text-stone-900 hover:text-stone-700 transition-colors"
@@ -29,34 +29,38 @@ export function Footer() {
               >
                 ThemeWagon
               </a>{" "}
-              for a better web. 
+              for a better web.
             </div>
           </div>
           <div className="flex space-x-6">
             <a
               href="#!"
-              className="text-sm text-stone-600 hover:text-stone-900 transition-colors"
+              onClick={(e) => e.preventDefault()}
+              className="text-sm text-stone-600 hover:text-stone-900 transition-colors cursor-pointer"
               rel="noopener noreferrer"
             >
               Creative Tim
             </a>
             <a
               href="#!"
-              className="text-sm text-stone-600 hover:text-stone-900 transition-colors"
+              onClick={(e) => e.preventDefault()}
+              className="text-sm text-stone-600 hover:text-stone-900 transition-colors cursor-pointer"
               rel="noopener noreferrer"
             >
               About Us
             </a>
             <a
               href="#!"
-              className="text-sm text-stone-600 hover:text-stone-900 transition-colors"
+              onClick={(e) => e.preventDefault()}
+              className="text-sm text-stone-600 hover:text-stone-900 transition-colors cursor-pointer"
               rel="noopener noreferrer"
             >
               Blog
             </a>
             <a
               href="#!"
-              className="text-sm text-stone-600 hover:text-stone-900 transition-colors"
+              onClick={(e) => e.preventDefault()}
+              className="text-sm text-stone-600 hover:text-stone-900 transition-colors cursor-pointer"
               rel="noopener noreferrer"
             >
               License
